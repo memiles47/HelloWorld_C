@@ -1,6 +1,9 @@
 #include <iostream>
 
 int main() {
-	double pi = 3.14159;
+	int file_size; // Snake Case
+	int FileSize; // Pacal Case
+	int fileSize; // Camel Case
+	int iFileSize; // Hungarian Notation
 	return 0;
 }
