@@ -1,14 +1,18 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-	// ()
-	// * and /
-	// + and -
+	double sales = 95000;
+	const double stateTaxRate = .04;
+	const double countyTaxRate = .02;
+	double stateTax = sales * stateTaxRate;
+	double countyTax = sales * countyTaxRate;
 
-	double x = 10;
-	int y = 5;
+	cout << "Sales: = $" << sales << endl
+		 << "State Tax = $" << stateTax << endl
+		 << "County Tax = $" << countyTax << endl
+		 << "Total Tax = $" << stateTax + countyTax;
 
-	double z = (x + 10) / (3 * y); // Correct solution!
-	std::cout << z;
 	return 0;
 }
