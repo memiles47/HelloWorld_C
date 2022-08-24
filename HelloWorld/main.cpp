@@ -4,13 +4,14 @@
 using namespace std;
 
 int main() {
-	double radius;
-	const double pi = 3.14159;
+	// This will be a comment - This comment placement is best
 
-	cout << "Please enter the radius of a circle: ";
-	cin >> radius;
+	/*
+	 * This is a multiline comment
+	 */
 
-	double area = pi * pow(radius, 2);
-	cout << "The area is: " << area;
+	int x = 2; // This is another comment - Not the best placement of a comment
+	cout << "I need to have a line to use the variable: "<< x << " squared = " << pow(x, 2);
+
 	return 0;
 }
