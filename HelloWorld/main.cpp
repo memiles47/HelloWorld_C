@@ -1,15 +1,16 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-	double fahrenheit;
+	double radius;
+	const double pi = 3.14159;
 
-	cout << "Please enter a temperature in degrees fahrenheit: ";
-	cin >> fahrenheit;
+	cout << "Please enter the radius of a circle: ";
+	cin >> radius;
 
-	double celsius = (fahrenheit - 32) / 1.8000;
-	cout << "That is equivalent to " << celsius << " degrees celsius.";
-
+	double area = pi * pow(radius, 2);
+	cout << "The area is: " << area;
 	return 0;
 }
