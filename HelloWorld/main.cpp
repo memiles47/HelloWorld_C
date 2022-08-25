@@ -4,23 +4,21 @@
 using namespace std;
 
 int main() {
-	// Integer Types
-	short shortType = 0; // Prevalent
-	int intType = 0; // Prevalent
-	long longType = 0;
-	long long longLongType = 0;
+	auto price = 99.99; // The auto keyword is great for our coding but
+	auto interestRate = 3.67f; // make sure to use the suffix f or L
+	auto fileSize = 9000L;
+	auto letter = 'a';
+	auto isValid = false;
 
-	// Floating Point Types
-	float floatType = 0;
-	double doubleType = 0; // Prevalent
-	long double longDoubleType = 0;
+	auto price1{ 99.99 }; // Another way of initializing. Not sure if I like it.
+	auto interestRate1{ 3.67f };
+	auto fileSize1{ 9000L };
+	auto letter1{ 'a' };
+	auto isValid1{ true };
 
-	bool boolType = false;
-	char charType = 'A';
 
-	cout << shortType << endl << intType << endl << longType << endl << longLongType << endl;
-	cout << floatType << endl << doubleType << endl << longDoubleType << endl;
-	cout << boolType << endl << charType;
+	cout << price << endl << interestRate << endl << fileSize << endl << letter << endl << isValid;
+	cout << price1 << endl << interestRate1 << endl << fileSize1 << endl << letter1 << endl << isValid1;
 
 	return 0;
 }
