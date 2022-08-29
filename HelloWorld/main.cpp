@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+// #include <string>
 // #include <cstdlib>;
 // #include <ctime>;
 // #include <iomanip>;
@@ -8,30 +8,16 @@
 using namespace std;
 
 int main() {
-	string name{};
-	cout << "Enter your name: ";
-	getline(cin, name);
+	string names[3];
+	cout << "Enter Name 1: ";
+	cin >> names[0];
 
-	string street{};
-	cout << endl << "Enter your address" << endl
-		 << "Street: ";
-	getline(cin, street);
+	cout << "Enter Name 2: ";
+	cin >> names[1];
 
-	string city{};
-	cout << "City: ";
-	getline(cin, city);
+	cout << "Enter Name 3: ";
+	cin >> names[2];
 
-	string state{};
-	cout << "State: ";
-	getline(cin, state);
-
-	string zip{};
-	cout << "Zip: ";
-	cin  >> zip;
-
-	cout << name << endl
-		 << street << endl
-		 << city << ", " << state << ", " << zip;
-
+	cout << "The first name you entered was: " << names[0];
 	return 0;
 }
