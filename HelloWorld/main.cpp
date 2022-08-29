@@ -8,14 +8,9 @@
 using namespace std;
 
 int main() {
-	auto x{ 10 };
-	double y{ 5 };
-	auto result = x == y;
-	cout << boolalpha << result << endl;
-
-	auto first{ 'a' };
-	auto second{ 'A' };
-	auto characterResult = first == second;
-	cout << characterResult;
+	int age{20};
+	int salary = 50'000;
+	bool isEligible{ (age > 18 && age < 65) || (salary > 30'000)};
+	cout << boolalpha << !isEligible;
 	return 0;
 }
