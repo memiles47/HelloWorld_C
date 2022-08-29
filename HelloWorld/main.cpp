@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+//#include <string>
 // #include <cstdlib>;
 // #include <ctime>;
 //#include <iomanip>;
@@ -8,17 +8,9 @@
 using namespace std;
 
 int main() {
-	string names[3];
-	cout << "Enter Name 1: ";
-	getline(cin, names[0]);
-
-	cout << "Enter Name 1: ";
-	getline(cin, names[1]);
-
-	cout << "Enter Name 1: ";
-	getline(cin, names[2]);
-
-
-	cout << "The first name you entered was: " << names[0];
+	int x = 10;
+	int y = 3;
+	double z = static_cast<double>(x) / y;
+	cout << z;
 	return 0;
 }
