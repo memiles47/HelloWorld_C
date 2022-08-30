@@ -8,9 +8,15 @@
 using namespace std;
 
 int main() {
-	int age{20};
-	int salary = 50'000;
-	bool isEligible{ (age > 18 && age < 65) || (salary > 30'000)};
-	cout << boolalpha << !isEligible;
+	// ()
+	// !
+	// &&
+	// ||
+
+	bool a{ true };
+	bool b{ false };
+	bool c{ false };
+	bool result = a || b && c;
+	cout << boolalpha << result << endl << c;
 	return 0;
 }
