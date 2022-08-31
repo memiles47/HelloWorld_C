@@ -16,12 +16,11 @@ int main() {
 
 	bool isCitizen{ true };
 	auto caResident{ true };
-	short tuition;
+	short tuition{};
 
 	if (isCitizen) // Outer If Statement
 	{
-		if (caResident) tuition = 0; // Inner If Statement
-		else tuition = 1000;
+		if (!caResident) tuition = 1000; // Inner If Statement
 	}
 	else tuition = 3000;
 
