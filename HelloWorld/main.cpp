@@ -8,26 +8,16 @@
 using namespace std;
 
 int main() {
-	// Order of logical operators
-	// ()
-	// !
-	// &&
-	// ||
+	double sales{};
+	double commission;
 
-	char isUSCitizen{};
-	cout << "Are you a US citizen (Y/N)?: ";
-	cin >> isUSCitizen;
+	cout << "Enter sales total: ";
+	cin >> sales;
 
-	char hasBachelorsDegree{};
-	cout << "Do you have a Bachelors degree (Y/N)?: ";
-	cin >> hasBachelorsDegree;
+	if (sales <= 10'000) commission = .10;
+	else if (sales <= 15'000) commission = .15;
+	else commission = .20;
 
-	int yearsOfExperience{};
-	cout << "How many years of experience do you have?: ";
-	cin >> yearsOfExperience;
-
-	bool isEligible = isUSCitizen == 'Y' && (hasBachelorsDegree == 'Y' || yearsOfExperience >= 2);
-	cout << boolalpha << isEligible;
-
+	cout << endl << "Your commission will be " << commission * 100 << "%";
 	return 0;
 }
