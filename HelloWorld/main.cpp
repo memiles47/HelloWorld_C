@@ -8,22 +8,15 @@
 using namespace std;
 
 int main() {
-	// US Citizen
-	//   CA Resident: tuition = 0
-	//   Non Resident: tuition = 1000
-	// Not a US Citizen
-	//	 tuition = 1000
+	auto sales{ 11'000 };
+	//double commission;
 
-	bool isCitizen{ true };
-	auto caResident{ true };
-	short tuition{};
+	//if (sales > 10'000) commission = .1;
+	//else commission = .05;
 
-	if (isCitizen) // Outer If Statement
-	{
-		if (!caResident) tuition = 1000; // Inner If Statement
-	}
-	else tuition = 3000;
+	double commission = sales > 10'000 ? .1 : .05;
 
-	cout << tuition;
+	cout << commission;
+
 	return 0;
 }
