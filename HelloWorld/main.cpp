@@ -7,16 +7,16 @@
 
 using namespace std;
 
-int main() {
-	auto sales{ 11'000 };
-	//double commission;
+int main()
+{
+	double value1{};
+	double value2{};
 
-	//if (sales > 10'000) commission = .1;
-	//else commission = .05;
+	cout << "Enter two numeric values: " << endl;
+	cin >> value1 >> value2;
 
-	double commission = sales > 10'000 ? .1 : .05;
+	double larger = value1 > value2 ? value1 : value2;
 
-	cout << commission;
-
+	cout << endl << larger;
 	return 0;
 }
