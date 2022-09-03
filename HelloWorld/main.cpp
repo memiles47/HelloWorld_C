@@ -12,7 +12,7 @@ int main()
 	double value1{};
 	double value2{};
 
-	cout << "Enter two numeric values: " << endl;
+	cout << "Enter two numeric values: ";
 	cin >> value1 >> value2;
 
 	double larger = value1 > value2 ? value1 : value2;
