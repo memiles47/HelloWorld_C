@@ -9,14 +9,36 @@ using namespace std;
 
 int main()
 {
-	double value1{};
-	double value2{};
+	cout << "1- Create account" << endl
+		 << "2- Change password" << endl
+		 << "3- Quit" << endl
+		 << "Select an option: ";
 
-	cout << "Enter two numeric values: ";
-	cin >> value1 >> value2;
+	short input;
+	cin >> input;
 
-	double larger = value1 > value2 ? value1 : value2;
+	switch (input)
+	{
+	case 1:
+		cout << "You selected 1";
+		break;
 
-	cout << endl << larger;
+	case 2:
+		cout << "You selectedd 2";
+		break;
+
+	default:
+		cout << "Goodbye!";
+	}
+
+
+	if (input == 1)
+		cout << "You selected 1";
+	else if (input == 2)
+		cout << "You selected 2";
+	else
+		cout << "Goodbye!";
+
+
 	return 0;
 }
