@@ -12,12 +12,12 @@ int main()
 	double value1{};
 	double value2{};
 	double answer{};
-	char operation{};
+	char op{};
 
 	cout << "Enter two values and an operator seperated by spaces" << endl;
-	cin >> value1 >> value2 >> operation;
+	cin >> value1 >> value2 >> op;
 
-	switch (operation)
+	switch (op)
 	{
 	case '*':
 		answer = value1 * value2;
@@ -35,10 +35,10 @@ int main()
 		break;
 
 	default:
-		cout << "Invalid operator";
+		cout << "Invalid operator!";
 	}
 
-	cout << value1 << " " << operation << " " << value2 << " = " << answer;
+	cout << value1 << " " << op << " " << value2 << " = " << answer;
 	
 	return 0;
 }
