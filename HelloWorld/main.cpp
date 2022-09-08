@@ -9,10 +9,21 @@ using namespace std;
 
 int main()
 {
-	for(int i = 5; i > 0; i--)
+	cout << "Please enter a number to factor, 0 or above: ";
+
+	long number{1};
+	cin >> number;
+
+	long factorial{1};
+	for(long i = 2; i <= number; i++)
 	{
-		if (i % 2 != 0)
-			cout << i << endl;
+		if (number == 0 || number == 1)
+			break;
+
+		factorial *= i;
 	}
+
+	cout << "The factorial of is " << factorial;
+
 	return 0;
 }
