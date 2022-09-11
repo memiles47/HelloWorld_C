@@ -9,17 +9,17 @@ using namespace std;
 
 int main()
 {
-	int numbers[] = { 1, 2, 3, 4 };
-	string name{ "Michael Miles" };
+	int temperatures[]{ 80, 78, 95, 75 };
+	double sum{};
 
-	for (int i = 0; i < sizeof(numbers) / sizeof(int); i++)
-		cout << numbers[i] << endl;
+	for (int temperature : temperatures)
+		sum += temperature;
 
-	for (int number: numbers)
-		cout << number << endl;
+	short count{ sizeof(temperatures) / sizeof(int) };
+	
+	double average = sum / count;
+	cout << average;
 
-	for (char ch : name)
-		cout << ch;
 
 	return 0;
 }
