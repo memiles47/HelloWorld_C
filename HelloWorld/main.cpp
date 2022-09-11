@@ -9,8 +9,18 @@ using namespace std;
 
 int main()
 {
-	for (int x = 1; x <= 5; x++)
-		for (int y = 1; y <= 5; y++)
-			cout << "(" << x << ", " << y << ")" << endl;
+	cout << "Please enter number of rows: ";
+	int number{};
+	cin >> number;
+	char ch = '*';
+
+	for (int i = 1; i <= number; i++)
+	{
+		cout << endl;
+		for (int a = 1; a <= i; a++)
+			cout << ch;
+	}
+
+
 	return 0;
 }
