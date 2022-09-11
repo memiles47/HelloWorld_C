@@ -9,24 +9,13 @@ using namespace std;
 
 int main()
 {
-	for (int i = 1; i <= 5; i++)
-		cout << i << endl;
+	int secret{ 7 };
+	int guess{};
 
-	int i{ 1 };
-	while (i <= 5)
+	while(guess != secret)
 	{
-		cout << i << endl;
-		i++;
-	}
-	
-	bool validNumber{ true };
-	int number{};
-	while(validNumber)
-	{
-		cout << "Enter a number: ";
-		cin >> number;
-
-		validNumber = !((number >= 0) && (number <= 5));
+		cout << "Guess the secret number: ";
+		cin >> guess;
 	}
 	return 0;
 }
