@@ -16,9 +16,9 @@ int main()
 
 	for (int i = 1; i <= number; i++)
 	{
-		cout << endl;
 		for (int a = 1; a <= i; a++)
 			cout << ch;
+		cout << endl;
 	}
 
 
