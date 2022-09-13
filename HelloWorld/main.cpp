@@ -7,9 +7,9 @@
 
 using namespace std;
 
-void greet(string firstName, string lastName)
+void greet(string name)
 {
-	cout << "Hello, " << firstName << " " << lastName << endl;
+	cout << "Hello, " << name  << endl;
 }
 
 string fullName(string firstName, string lastName)
@@ -20,13 +20,14 @@ string fullName(string firstName, string lastName)
 
 int main()
 {
-	// Calling - Invoking - executing
-	greet("Michael", "Miles");
 
-	string name = fullName("Michael", "Miles");
-	cout << name << endl;
+	//string name = fullName("Michael", "Miles");
+	// cout << name << endl;
+
+	// Calling - Invoking - executing
+	greet(fullName("Michael", "Miles"));
 
 	cout << "Done";
-
+	 
 	return 0;
 }
