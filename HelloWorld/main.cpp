@@ -7,27 +7,19 @@
 
 using namespace std;
 
-void greet(string name)
+int largest(int first, int last)
 {
-	cout << "Hello, " << name  << endl;
-}
-
-string fullName(string firstName, string lastName)
-{
-	// Concatenating (combining)
-	return firstName + " " + lastName;
+	return first > last ? first : last;
 }
 
 int main()
 {
+	cout << "Please Enter two integers separated by a space followed by the <ENTER> key: ";
+	int x{};
+	int y{};
+	cin >> x >> y;
 
-	//string name = fullName("Michael", "Miles");
-	// cout << name << endl;
+	cout << largest(x, y);
 
-	// Calling - Invoking - executing
-	greet(fullName("Michael", "Miles"));
-
-	cout << "Done";
-	 
 	return 0;
 }
