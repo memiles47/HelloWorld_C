@@ -9,6 +9,11 @@ using namespace std;
 
 void greet(string name)
 {
+	cout << "Hello " << name << endl;
+}
+
+void greet(string title, string name)
+{
 	
 }
 
