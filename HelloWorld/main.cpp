@@ -14,10 +14,11 @@ void greet(string name)
 
 void greet(string title, string name)
 {
-	
+	cout << "Hello " << title << " " << name << endl;
 }
 
 int main()
 {
+	greet("Mr.", "Miles");
 	return 0;
 }
