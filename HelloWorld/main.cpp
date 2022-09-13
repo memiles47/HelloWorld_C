@@ -7,7 +7,7 @@
 
 using namespace std;
 
-
+// Always code the parameters with a default at the end of the parameter list
 double calculateTax(double income, double taxRate = .2)
 {
 	return income * taxRate;
