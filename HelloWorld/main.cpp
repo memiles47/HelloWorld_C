@@ -7,17 +7,32 @@
 
 using namespace std;
 
-double increasePrice(double price)
+/*
+Adding an & after the type creates a reference to the original variable
+this should be done with variable containing large amounts of date e.g. strings
+*/
+
+void increasePrice(double& price)
 {
 	price *= 1.2;
-	return price;
+}
+
+void greet(const string& name)
+{
+	cout << "Hello " << name << endl;
+	// name = "a";
 }
 
 int main()
 {
 	double price{ 100 };
-	price = increasePrice(price);
+	increasePrice(price);
 	cout << price << endl;
+
+	string name{ "Michael" };
+	greet(name);
+	cout << name;
+	
 
 	return 0;
 }
